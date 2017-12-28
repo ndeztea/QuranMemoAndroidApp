@@ -310,6 +310,14 @@ module.exports = [
         "merges": [
             "navigator.notification"
         ]
+    },
+    {
+        "file": "plugins/cordova-plugin-payment-iap/www/iap.js",
+        "id": "cordova-plugin-payment-iap.iap",
+        "pluginId": "cordova-plugin-payment-iap",
+        "clobbers": [
+            "window.iap"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -321,7 +329,8 @@ module.exports.metadata =
     "cordova-plugin-media-capture": "2.0.0",
     "cordova-plugin-whitelist": "1.3.3",
     "cordova-plugin-dialogs": "1.3.4",
-    "cordova-plugin-crosswalk-webview": "2.3.0"
+    "cordova-plugin-crosswalk-webview": "2.3.0",
+    "cordova-plugin-payment-iap": "2.0.52"
 }
 // BOTTOM OF METADATA
 });

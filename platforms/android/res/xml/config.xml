@@ -21,6 +21,9 @@
     <feature name="Notification">
         <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
     </feature>
+    <feature name="IAP">
+        <param name="android-package" value="jp.wizcorp.phonegap.plugin.wizPurchase.IAP" />
+    </feature>
     <name>QuranMemo Community</name>
     <description>Komunitas Penghafal Al-Quran Online dan tools untuk menghafal Al-Quran Mandiri</description>
     <author email="quranmemo.id@gmail.com" href="http://quranmemo.id">Team QuranMemo.id</author>

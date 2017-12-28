@@ -31,6 +31,7 @@
         <variable name="XWALK_MODE" value="embedded" />
         <variable name="XWALK_MULTIPLEAPK" value="true" />
     </plugin>
+    <plugin name="cordova-plugin-payment-iap" spec="^2.0.52" />
     <engine name="android" spec="^6.3.0" />
     <engine name="browser" spec="^5.0.1" />
 </widget>

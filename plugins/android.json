@@ -32,6 +32,9 @@
       "XWALK_MODE": "embedded",
       "XWALK_MULTIPLEAPK": "true",
       "PACKAGE_NAME": "com.ndeztea.quranmemocommunity"
+    },
+    "cordova-plugin-payment-iap": {
+      "PACKAGE_NAME": "com.ndeztea.quranmemocommunity"
     }
   },
   "dependent_plugins": {}
