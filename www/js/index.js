@@ -34,20 +34,21 @@ var app = {
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
         this.receivedEvent('deviceready');
+        //navigator.notification.alert('a');
         this.initStore();
 
         setTimeout(function(){ 
-            window.location.href = "purchase.html"; 
+            window.location.href = "iframe.html"; 
         }, 3000);
     },
 
     initStore: function(){
-        alert(androidApplicationLicenseKey+' - '+productIds);
+        //alert(androidApplicationLicenseKey+' - '+productIds);
         window.iap.setUp(androidApplicationLicenseKey);
         window.iap.requestStoreListing(productIds, function (result){
-                alert(JSON.stringify(result));
+                console.log(JSON.stringify(result));
             }, function (error){
-                alert("error: "+error);
+                console.log("error: "+error);
         });
     },
 
@@ -67,7 +68,36 @@ var app = {
 
 function purchase(productId) {
     window.iap.purchaseProduct(productId, function (result){
-        alert("purchaseProduct");
+        navigator.notification.alert("Pembayaran behasil, kirimkan konfirmasi segera.");
+    }, 
+    function (error){
+        navigator.notification.alert("Terjadi kesalahan pembayar, kami sarankan untuk melakukan transfer bank: "+error);
+    });
+}
+
+function consumeProduct(productId) {
+    //navigator.notification.alert(productId);
+    //consume product id, throw away purchase product id info from server.
+    window.iap.consumeProduct(productId, function (result){
+        navigator.notification.alert("Active!");
+    }, 
+    function (error){
+        navigator.notification.alert("Not-Active");
+    }); 
+    
+}
+
+function restorePurchases() {
+    //get user's purchased product ids which purchased before and not cunsumed.
+    window.iap.restorePurchases(function (result){
+        for (var i = 0 ; i < result.length; ++i){
+            var p = result[i];
+            
+            if (self.existing_purchases.indexOf(p['productId']) === -1)
+                self.existing_purchases.push(p['productId']);           
+
+            alert("productId: "+p['productId']);
+        }
     }, 
     function (error){
         alert("error: "+error);
