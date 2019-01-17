@@ -37,7 +37,7 @@
     </head>
     <body>
     
-        <iframe src="https://quranmemo.com/public/dashboard?v=1.1.0"  id="iframe" style="border:0px"></iframe>
+        <iframe src="https://quranmemo.com/public/dashboard?v=1.6.0"  id="iframe" style="border:0px"></iframe>
 
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
@@ -164,11 +164,23 @@
                 }
                 //Recorder.captureAudio(memoId, request);
             }
+            if(request=='purchase'){
+                productId = memoId;
+                purchaseInBrowser(productId);
+            }
+            if(request=='checkPurchase'){
+                productId = memoId;
+                restorePurchases();
+                consumeProduct(productId);
+            }
             // security checking, only 
             if (event.origin == url) { }
         }, false);
 
-       
+        function purchaseInBrowser(productId){
+            //alert('purcahse:'+productId);
+            purchase(productId);
+        }
         
         </script>
         <script type="text/javascript">  
