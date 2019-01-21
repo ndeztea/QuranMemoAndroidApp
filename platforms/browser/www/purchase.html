@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+        <!-- Enable all requests, inline styles, and eval() -->
+        <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>Hello World</title>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            // Wait for device API libraries to load
+                //
+                function onLoad() {
+                    document.addEventListener("deviceready", onDeviceReady, false);
+                }
+
+                // device APIs are available
+                //
+                function onDeviceReady() {
+                    // Register the event listener
+                    document.addEventListener("backbutton", onBackKeyDown, false);
+                }
+
+                // Handle the back button
+                //
+                function onBackKeyDown() {
+                    //alert('blah');
+                }
+        </script>
+    </head>
+    <body onload="onLoad()">
+        <a href="iframe.html">to iframe.html</a> - 
+        <h4><a href="#" onclick="purchase('paket_murah');">Click to purcahse murah</a></h4><br>
+         <h4><a href="#" onclick="consumeProduct('paket_murah');">Check  purcahse murah</a></h4>
+         <h4><a href="#" onclick="restorePurchases();">Restore</a></h4>
+         
+    </body>
+</html>
