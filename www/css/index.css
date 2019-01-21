@@ -28,7 +28,7 @@ body {
     font-size: 12px;
     -o-text-overflow: clip;
     text-overflow: clip;
-    background-color: rgb(0, 150, 137);
+    background-color: rgb(177, 172, 130)!important;
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size:14px;
     height:100%;
@@ -95,13 +95,13 @@ h1 {
     50% { opacity: 0.4; }
     to { opacity: 1.0; }
 }
- 
+
 @-webkit-keyframes fade {
     from { opacity: 1.0; }
     50% { opacity: 0.4; }
     to { opacity: 1.0; }
 }
- 
+
 .blink {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;

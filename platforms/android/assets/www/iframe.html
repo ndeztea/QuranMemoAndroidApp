@@ -36,8 +36,8 @@
         <title>QuranMemo Community</title>
     </head>
     <body>
-    
-        <iframe src="https://quranmemo.com/public/dashboard?v=1.7.0"  id="iframe" style="border:0px"></iframe>
+
+        <iframe src="https://mim.quranmemo.com/public/dashboard?v=1.6.0"  id="iframe" style="border:0px"></iframe>
 
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
@@ -74,7 +74,7 @@
                     navigator.device.capture.captureAudio(this.captureSuccess, this.captureError, {limit: 1,duration: 20});
                 },
 
-               
+
                 uploadFile : function(mediaFile){
                     var ft = new FileTransfer();
                     var path = mediaFile.fullPath;
@@ -84,12 +84,12 @@
                     var iframe = document.getElementById("iframe").contentWindow;
                     //var uri = 'http://dev.quranmemo.com/public/memoz/uploadRecordedMobile/'+this.memoId;
                     if(this.captureAudio=='audioUstadz'){
-                        var uri = 'https://quranmemo.com/public/memoz/uploadRecordedUstadzMobile/'+this.memoId;
+                        var uri = 'https://mim.quranmemo.com/public/memoz/uploadRecordedUstadzMobile/'+this.memoId;
                     }else{
-                        var uri = 'https://quranmemo.com/public/memoz/uploadRecordedMobile/'+this.memoId;
+                        var uri = 'https://mim.quranmemo.com/public/memoz/uploadRecordedMobile/'+this.memoId;
                         //var uri = 'http://dev.quranmemo.com/public/memoz/list';
                     }
-                    
+
 
                     var options = new FileUploadOptions();
                     options.fileKey = "file";
@@ -123,11 +123,11 @@
                                 navigator.notification.alert('File koreksi rekaman berhasil diupload.');
                                 iframe.postMessage('correction_file', "*");
                             }
-                            
+
                             /*navigator.notification.alert('Upload success: ' + result.responseCode);*/
                             //navigator.notification.alert(result.response);
                             //navigator.notification.alert(result.bytesSent + ' bytes sent');
-                            
+
                             //iframe.postMessage(result.response, "*");
                         },
                         function(error) {
@@ -164,14 +164,26 @@
                 }
                 //Recorder.captureAudio(memoId, request);
             }
-            // security checking, only 
+            if(request=='purchase'){
+                productId = memoId;
+                purchaseInBrowser(productId);
+            }
+            if(request=='checkPurchase'){
+                productId = memoId;
+                restorePurchases();
+                consumeProduct(productId);
+            }
+            // security checking, only
             if (event.origin == url) { }
         }, false);
 
-       
-        
+        function purchaseInBrowser(productId){
+            //alert('purcahse:'+productId);
+            purchase(productId);
+        }
+
         </script>
-        <script type="text/javascript">  
+        <script type="text/javascript">
             var w = window,
                 d = document,
                 e = d.documentElement,

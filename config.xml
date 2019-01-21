@@ -18,8 +18,6 @@
         <allow-intent href="market:*" />
     </platform>
     <allow-navigation href="http://dev.quranmemo.com/*" />
-    <engine name="android" spec="^6.3.0" />
-    <engine name="browser" spec="^5.0.1" />
     <plugin name="cordova-plugin-whitelist" spec="^1.3.3" />
     <plugin name="cordova-plugin-file" spec="^5.0.0" />
     <plugin name="cordova-plugin-file-transfer" spec="^1.7.0" />
@@ -33,4 +31,6 @@
         <variable name="XWALK_MODE" value="embedded" />
         <variable name="XWALK_MULTIPLEAPK" value="true" />
     </plugin>
+    <engine name="android" spec="^6.3.0" />
+    <engine name="browser" spec="^5.0.1" />
 </widget>
