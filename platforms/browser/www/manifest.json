@@ -1,10 +1,10 @@
 {
   "background_color": "#FFF",
   "display": "standalone",
-  "name": "QuranMemo Community",
-  "short_name": "QuranMemo Community",
-  "version": "com.ndeztea.quranmemocommunity",
-  "description": "Komunitas Penghafal Al-Quran Online dan tools untuk menghafal Al-Quran Mandiri",
+  "name": "MIM",
+  "short_name": "MIM",
+  "version": "com.quranmemo.mim",
+  "description": "Muslim Indevendent Movement",
   "author": "Team QuranMemo.id",
   "icons": [
     {
