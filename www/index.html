@@ -39,10 +39,9 @@
                    <div class='splash'>
                      <div class='holder'>
                         <span class='splash-text'>
-                            <img class="bigq" src="img/qmc-logo.png" alt="">
-                            <img class="txtlogo" src="img/qmc-title.png" alt="">
-                            <p>Komunitas Penghafal <br> Al-Quran</p>
-                            <p><small>Version 1.6.0</small></p>
+                            <img class="bigq" style="width:250px" src="img/qmc-logo.png" alt="">
+                            <!--img class="txtlogo" src="img/qmc-title.png" alt=""-->
+                            <!--p><small style="font-size:7px">Version 1.8.0</small></p-->
                         </span>
                         <!--button class='start animated fadeIn'>
                             Get Started
@@ -52,8 +51,9 @@
                 </div>
             </div>
             <div id="deviceready" class="blink">
-                <p class="event listening"><img class="bigq" src="img/loader.gif" alt=""></p>
-                <p class="event received">Loaded!</p>
+                <p class="event listening"><img class="bigq" style="width:40px" src="img/loading.svg" alt=""></p>
+                <br>
+                <p class="event received" sytle="font-size:10px">Loaded!</p>
             </div>
         </div>
         <!-- /splash-body -->
@@ -70,7 +70,7 @@
             $('.splash-body').css('height',vph);
             $('.splash-inner').css('opacity','1');
 
-          
+
             function removeMe(){
                 $('.splash-body').css('display','none');
             }
