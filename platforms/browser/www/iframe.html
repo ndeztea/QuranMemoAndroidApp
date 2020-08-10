@@ -37,7 +37,8 @@
     </head>
     <body>
 
-        <iframe src="http://ubkplus.org/quranmemo.com/public/dashboard?v=1.8.0"  id="iframe" style="border:0px"></iframe>
+        <!--iframe src="http://ubkplus.org/quranmemo.com/public/dashboard?v=1.8.0"  id="iframe" style="border:0px"></iframe-->
+        <iframe src="http://quranmemo.id?refer=community"  id="iframe" style="border:0px"></iframe>
 
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
@@ -84,9 +85,9 @@
                     var iframe = document.getElementById("iframe").contentWindow;
                     //var uri = 'http://dev.quranmemo.com/public/memoz/uploadRecordedMobile/'+this.memoId;
                     if(this.captureAudio=='audioUstadz'){
-                        var uri = 'http://ubkplus.org/quranmemo.com/public/memoz/uploadRecordedUstadzMobile/'+this.memoId;
+                        var uri = 'https://community.quranmemo.com/public/memoz/uploadRecordedUstadzMobile/'+this.memoId;
                     }else{
-                        var uri = 'http://ubkplus.org/quranmemo.com/public/memoz/uploadRecordedMobile/'+this.memoId;
+                        var uri = 'https://community.quranmemo.com/public/memoz/uploadRecordedMobile/'+this.memoId;
                         //var uri = 'http://dev.quranmemo.com/public/memoz/list';
                     }
 
