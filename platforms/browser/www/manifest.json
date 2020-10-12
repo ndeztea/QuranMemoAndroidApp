@@ -1,10 +1,10 @@
 {
   "background_color": "#FFF",
   "display": "standalone",
-  "name": "QuranMemo Community",
-  "short_name": "QuranMemo Community",
-  "version": "com.ndeztea.quranmemocommunity",
-  "description": "Komunitas Penghafal Al-Quran Online dan tools untuk menghafal Al-Quran Mandiri",
+  "name": "Kelas Hijrah",
+  "short_name": "Kelas Hijrah",
+  "version": "com.quranmemo.kelashijrah",
+  "description": "Komunitas Penghafal Al-Quran Online Kelas Hijrah",
   "author": "Team QuranMemo.id",
   "icons": [
     {

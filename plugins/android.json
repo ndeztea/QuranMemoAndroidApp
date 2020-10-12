@@ -7,34 +7,26 @@
     "files": {}
   },
   "installed_plugins": {
-    "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "com.ndeztea.quranmemocommunity"
+    "cordova-plugin-dialogs": {
+      "PACKAGE_NAME": "com.quranmemo.kelashijrah"
     },
     "cordova-plugin-file": {
-      "PACKAGE_NAME": "com.ndeztea.quranmemocommunity"
+      "PACKAGE_NAME": "com.quranmemo.kelashijrah"
     },
     "cordova-plugin-file-transfer": {
-      "PACKAGE_NAME": "com.ndeztea.quranmemocommunity"
+      "PACKAGE_NAME": "com.quranmemo.kelashijrah"
     },
     "cordova-plugin-media": {
-      "PACKAGE_NAME": "com.ndeztea.quranmemocommunity"
+      "PACKAGE_NAME": "com.quranmemo.kelashijrah"
     },
     "cordova-plugin-media-capture": {
-      "PACKAGE_NAME": "com.ndeztea.quranmemocommunity"
-    },
-    "cordova-plugin-dialogs": {
-      "PACKAGE_NAME": "com.ndeztea.quranmemocommunity"
-    },
-    "cordova-plugin-crosswalk-webview": {
-      "XWALK_VERSION": "23+",
-      "XWALK_LITEVERSION": "xwalk_core_library_canary:17+",
-      "XWALK_COMMANDLINE": "--disable-pull-to-refresh-effect",
-      "XWALK_MODE": "embedded",
-      "XWALK_MULTIPLEAPK": "true",
-      "PACKAGE_NAME": "com.ndeztea.quranmemocommunity"
+      "PACKAGE_NAME": "com.quranmemo.kelashijrah"
     },
     "cordova-plugin-payment-iap": {
-      "PACKAGE_NAME": "com.ndeztea.quranmemocommunity"
+      "PACKAGE_NAME": "com.quranmemo.kelashijrah"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.quranmemo.kelashijrah"
     }
   },
   "dependent_plugins": {}

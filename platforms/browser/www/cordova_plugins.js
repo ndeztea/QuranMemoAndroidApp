@@ -329,7 +329,6 @@ module.exports.metadata =
     "cordova-plugin-media-capture": "2.0.0",
     "cordova-plugin-whitelist": "1.3.3",
     "cordova-plugin-dialogs": "1.3.4",
-    "cordova-plugin-crosswalk-webview": "2.3.0",
     "cordova-plugin-payment-iap": "2.0.52"
 }
 // BOTTOM OF METADATA
